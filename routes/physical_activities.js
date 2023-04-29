@@ -1,9 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET Physical_Activities page. */
+
+const {PhysicalActivities} = require('../models');
+
+
+/* GET PhysicalActivities page. */
 router.get('/', function(req, res, next) {
-  res.render('Physical_Activities', { title: 'Physical log' });
+  res.render('Physical_Activities', { title: 'PhysicalActivities' });
 });
+
 
 module.exports = router;
